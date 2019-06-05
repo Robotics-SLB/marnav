@@ -165,13 +165,13 @@ public:
 		return *this;
 	}
 
-	friend vector2 operator+(const vector2 & w, const vector2 & v) { return vector2{w} += v; }
+	friend vector2 operator+(const vector2 & w, const vector2 & v) { return vector2(w) += v; }
 
-	friend vector2 operator-(const vector2 & w, const vector2 & v) { return vector2{w} -= v; }
+	friend vector2 operator-(const vector2 & w, const vector2 & v) { return vector2(w) -= v; }
 
-	friend vector2 operator*(const vector2 & v, value_type f) { return vector2{v} *= f; }
+	friend vector2 operator*(const vector2 & v, value_type f) { return vector2(v) *= f; }
 
-	friend vector2 operator*(value_type f, const vector2 & v) { return vector2{v} *= f; }
+	friend vector2 operator*(value_type f, const vector2 & v) { return vector2(v) *= f; }
 
 	friend value_type operator*(const vector2 & a, const vector2 & b) { return a.dot(b); }
 

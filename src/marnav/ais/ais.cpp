@@ -178,7 +178,7 @@ std::vector<std::pair<std::string, uint32_t>> encode_message(const message & msg
 			// last, append remainder padded to the string
 
 			auto remainder = bits.size() - ofs;
-			current.second = 6 - remainder;
+			current.second = (uint32_t)(6 - remainder);
 			uint8_t value = 0;
 			bits.get(value, ofs, remainder);
 			value <<= current.second;

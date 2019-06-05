@@ -23,7 +23,7 @@ std::vector<std::unique_ptr<nmea::sentence>> make_vdms(
 	for (uint32_t fragment = 0; fragment < payload.size(); ++fragment) {
 		auto sentence = utils::make_unique<vdm>();
 
-		sentence->set_n_fragments(payload.size());
+		sentence->set_n_fragments((uint32_t)(payload.size()));
 		sentence->set_fragment(fragment + 1);
 		sentence->set_radio_channel(radio_channel);
 		sentence->set_payload(payload[fragment]);

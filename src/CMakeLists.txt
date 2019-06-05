@@ -459,15 +459,14 @@ target_include_directories(marnav
 		$<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}>
 	)
 
-target_compile_options(marnav
-	PRIVATE
-		-pipe
-		-ggdb
-		-Wall
-		-Wextra
-		-pedantic-errors
-		-Wold-style-cast
-	)
+
+#target_compile_options(marnav
+#	PRIVATE
+#		-pipe
+#		-ggdb
+#		-Wall
+#		-pedantic-errors
+#	)
 
 if(ENABLE_PROFILING)
 	target_compile_options(marnav
