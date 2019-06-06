@@ -140,6 +140,7 @@ enum class sentence_id : uint32_t {
 	PRWIZCH, ///< Rockwell Channel Status
 	PUBX, ///< u-blox (misc formats, depending on first field)
 	TMVTD, ///< Transas VTS / SML tracking system report
+	PRDID, /// pitch roll heading
 
 	// proprietaty extension
 

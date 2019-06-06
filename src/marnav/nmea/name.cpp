@@ -255,6 +255,9 @@ std::string to_name(sentence_id t)
 			return "Transas VTS / SML tracking system report";
 		case sentence_id::STALK:
 			return "SeaTalk raw data over NMEA";
+		case sentence_id::PRDID:
+			return "Pitch/Roll/Heading";
+
 	}
 	return "-";
 }
