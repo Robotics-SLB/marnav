@@ -86,6 +86,7 @@
 #include <marnav/nmea/pgrmm.hpp>
 #include <marnav/nmea/pgrmz.hpp>
 #include <marnav/nmea/prdid.hpp>
+#include <marnav/nmea/audep.hpp>
 #include <marnav/nmea/stalk.hpp>
 
 /// @example parse_nmea.cpp
@@ -139,7 +140,7 @@ static const std::vector<entry> known_sentences = {
 
 	// vendor extensions
 	REGISTER_SENTENCE(pgrme), REGISTER_SENTENCE(pgrmm), REGISTER_SENTENCE(pgrmz),
-	REGISTER_SENTENCE(stalk), REGISTER_SENTENCE(prdid)};
+	REGISTER_SENTENCE(stalk), REGISTER_SENTENCE(prdid), REGISTER_SENTENCE(audep)};
 #undef REGISTER_SENTENCE
 }
 

@@ -139,6 +139,7 @@ target_sources(marnav
 		marnav/nmea/pgrmm.cpp
 		marnav/nmea/pgrmz.cpp
 		marnav/nmea/prdid.cpp
+		marnav/nmea/audep.cpp
 		marnav/nmea/stalk.cpp
 	)
 
@@ -240,6 +241,7 @@ install(
 		marnav/nmea/ztg.hpp
 		marnav/nmea/pgrme.hpp
 		marnav/nmea/prdid.hpp
+		marnav/nmea/audep.hpp
 	DESTINATION include/marnav/nmea
 	)
 

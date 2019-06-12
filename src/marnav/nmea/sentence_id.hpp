@@ -141,6 +141,7 @@ enum class sentence_id : uint32_t {
 	PUBX, ///< u-blox (misc formats, depending on first field)
 	TMVTD, ///< Transas VTS / SML tracking system report
 	PRDID, /// pitch roll heading
+	AUDEP, /// depth
 
 	// proprietaty extension
 

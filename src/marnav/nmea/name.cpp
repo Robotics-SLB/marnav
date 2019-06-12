@@ -257,7 +257,8 @@ std::string to_name(sentence_id t)
 			return "SeaTalk raw data over NMEA";
 		case sentence_id::PRDID:
 			return "Pitch/Roll/Heading";
-
+		case sentence_id::AUDEP:
+			return "Depth";
 	}
 	return "-";
 }
